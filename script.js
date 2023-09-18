@@ -17,7 +17,10 @@ var timeEl = document.querySelector("time");
 
 
 //Write the quiz func
-function makeQuiz(){};
+function startQuiz(){
+    console.log ('start quiz')
+    document.querySelector('#startButton').style.display='none'
+};
 
 function giveQuestions(questions, quizContainer){
     var output = [];
@@ -33,7 +36,7 @@ function giveQuestions(questions, quizContainer){
 
     }
 
-
+console.log ('test the app')
 
 
 // giveQuestions(questions, quizContainer);
@@ -128,3 +131,5 @@ giveQuestions(questions, quizContainer);
 function giveResults(){
 
 };
+
+document.querySelector('#startButton').addEventListener('click',startQuiz)
