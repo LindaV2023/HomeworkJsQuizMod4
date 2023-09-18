@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    
+       <header> 
+      </header>
+
+      <main>
+        <section>
+      <div class="container">
+         <h1><strong>Coding Quiz Challenge</strong></h1> 
+         <p>Try to answer the following code-related questions within
+          the time limit.  Keep in mind that incorrect answers will
+          penalize your score/time by 15 seconds!
+        </p>
+        <br>
+        <br>
+      <div class="start">
+      <button id="startButton" class="startButton btn" onClick="startQuiz()">Start Quiz</button>
+
+    </div>
+  </section>
+  
+      
+  <!-- Question page -->
+      <section id = "the-quiz" class="hide">
+      <!-- <div class="containeQuestion"></div> -->
+      <div class = "row">
+        <div class = "quetions">
+           <h3 id = "question-name"></h3>
+
+        </div>
+      </div>
+      <div class = "row">
+        <div class id = "choices"> </div>
+        <div id = "user-answer" class = "user-answer hide"></div>
+      </section>
+     
+     
+      <!--<div class="quiz" style = "display: none;"> -->
+
+
+        <!--<div class="question"> <p>Question</p></div> -->
+          <!-- <div id="timer">
+          </div> -->
+       <!-- </section> -->
+
+        <section>
+          <div class="quiz results">
+
+          </div>
+
+           <!-- Quiz timer -->
+        <div class="quiz-timer">
+          <div class="timer-text">
+          <div class="timer-count">60</div>
+          <h3>seconds remaining</h3>
+            </div>
+          </div>
+        </div>
+  
+
+          <!-- Quiz wins loss counter -->
+          <div class= "correct-wrong-container">
+      
+              <h2>Correct: <span class="correct">0</span></h2>
+              <h2>Wrong: <span class="wrong">0</span></h2>
+              <h2>Score: <span class="score">0</h2>
+        
+            <button class="reset-button">Reset Scores</button>
+        </div>
+      </div>
+    </div>
+
+       
+
+        </section>
+
+
+        <div class="questions"> <p> Quesiton</p></div>
+
+       
+
+          <div class="answerButtons">
+            <div class="answerButtons" id="A" onclick="checkAnswer('A')"></div>
+          </div>
+          </div>
+
+        <ul class="answerButtons">
+        <li button class="answerButtons" id="A" onclick="checkAnswer('A')"></button li>
+        <li button class="btn">Answer 1</button li>
+        <li button class="btn">Answer 2</button li>
+        <li button class="btn">Answer 3</button li>
+        <li button class="btn">Answer 4</button li> 
+        </ul>  
+      <!-- <div class="next">
+         <button id="nextButton" class="nextButton btn">Next</button>
+    </div> -->
+    </div>
+    </section>
+
+    <!-- Final page with scores -->
+    <section> 
+    </section>>
+
+
+
+<!-- Highscore Display section -->
+<section id="highscore-display" class = "hide">
+  <div class="row">
+      <div id = "high-score">
+          <h2>Highscores</h2>
+          <h3> Your final score is <span id = "final-score">0</span></h3>"
+          <label for = "initials-are"> Enter initials: </label>
+          <input type ="text" name="initals-area">
+          <button id = "submit-button" type="submit">Submit</button>
+
+          <!-- <class id="highscores"></ol> -->
+          <!--<a href="./index.html"><button id="return-btn">Play Again</button></a>
+          <button id="clear-btn">Clear Highscores</button>-->
+      </div>
+  </div>
+</div>
+  
+
+</section>
+
+  
+
+  </main>
+
+    <!--<script src="script.js"></script>-->
+
+    <script type = "text/javascript" scr = "script.js"></script>
+  </body>
+</html>
